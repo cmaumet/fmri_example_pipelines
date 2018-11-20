@@ -7,6 +7,7 @@ NUM_IMG_STAB = struct('sessName', {'se_fingerfootlips'},'nBeg', {2});
 NUM_IMG_TRUNC = struct('sessName', {'se_fingerfootlips'},'nEnd',{0});
 
 FIS_UNITS = 'secs';
+FIS_RT = 2.5;
 
 FIS_CONDITIONS{1} = struct(...
     'sessName', 'se_fingerfootlips',...
@@ -34,4 +35,6 @@ GU_CONTRASTS{1} = struct(...
     'nameNegative', 'Motor finger: deactivations',...
     'sessrep', 'none');
 
-GU_THRESHOLDS{1} = struct('threshdesc', 'FWE', 'thresh', 0.05);
+% GU_THRESHOLDS{1} = struct('threshdesc', 'FWE', 'thresh', 0.05);
+
+GU_THRESHOLDS{1} = struct('threshdesc', 'none', 'thresh', 0.001);
